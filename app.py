@@ -6,7 +6,7 @@ import requests
 # Define function to fetch movie poster
 def fetch_poster(movie_id):
     response = requests.get(
-        'https://api.themoviedb.org/3/movie/{}?api_key=8dfdd1a16dc551bb68117ba34218626d&language=en-US'.format(
+        'api-key'.format(
             movie_id))
     data = response.json()
 
